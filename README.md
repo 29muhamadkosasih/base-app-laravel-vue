@@ -217,7 +217,7 @@ APP_URL=http://localhost
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=ujian_online
+DB_DATABASE=
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -289,31 +289,3 @@ Perintah ini akan menjalankan:
 -   `/admin/users`
 -   `/admin/roles`
 -   `/admin/permissions`
-
-## Testing dan Quality
-
-Menjalankan test:
-
-```bash
-php artisan test
-```
-
-Menjalankan formatter:
-
-```bash
-./vendor/bin/pint
-```
-
-## Catatan Project
-
--   project ini adalah base app Laravel Vue untuk panel admin
--   modul lama terkait exam dan student sudah dihapus
--   TinyMCE dan konfigurasi `API_KEY_TINYMCE` sudah dihapus
--   config Excel lama juga sudah dihapus
--   dependency frontend dan backend sudah dirapikan agar hanya yang dipakai yang tersisa
--   sidebar dan akses halaman mengikuti permission user
--   setting aplikasi dibagikan ke Blade dan Inertia untuk branding global
-
-## Tujuan Base App
-
-Project ini disiapkan sebagai fondasi reusable untuk pengembangan aplikasi admin Laravel + Vue dengan sistem roles dan permissions yang rapi, bersih, dan mudah dikembangkan lebih lanjut.
